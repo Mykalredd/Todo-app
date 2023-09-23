@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  width: 400px;
+  animation: fadeIn 0.3s;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.buttons {
+  display: flex;
+  gap: 5px;
+  margin-left: auto;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button.edit-button {
+  background-color: #ffc107;
+  color: white;
+}
+
+button.remove-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.complete-button {
+  background-color: #28a745;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
